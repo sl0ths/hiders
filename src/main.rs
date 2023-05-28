@@ -1,9 +1,9 @@
 mod transform;
 use crate::transform::*;
-use image::{DynamicImage, GenericImage, GenericImageView, Rgba};
+use image::{open, DynamicImage, GenericImage, GenericImageView, Rgba};
 use std::env;
 use std::fs::File;
-use std::io::{BufReader, Lines};
+use std::io::{BufRead, BufReader, Lines};
 use std::path::Path;
 
 #[allow(dead_code)]
